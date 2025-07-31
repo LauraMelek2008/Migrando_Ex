@@ -15,11 +15,20 @@
   align-items: center;
   width: 100%;
 }
+.logo{
+  display: flex;
+}
 
-.logo h1 {
+.migrati  {
   font-size: 1.8rem;
   color: #F7F7F7;
 }
+
+.on{
+   font-size: 1.8rem;
+  color: #94B2CE;
+}
+
 
 .nav ul {
   display: flex;
