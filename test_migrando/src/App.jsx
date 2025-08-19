@@ -1,27 +1,17 @@
-import React from 'react';
+// App.js
 import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import HelpSection from './components/HelpSection'; // Novo componente
-import ProductCategories from './components/ProductCategories';
-import FeaturedProducts from './components/FeaturedProducts';
-import Newsletter from './components/Newsletter';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import BoasVindas from './page/BoasVindas';
+
+
 
 function App() {
   return (
-    //hello world good morning
-    <div className="App">
-      <Header />
-      <main>
-        <Hero />
-        <HelpSection /> {/* Adicione esta linha */}
-        <ProductCategories />
-        <FeaturedProducts />
-        <Newsletter />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<BoasVindas />} />
+      </Routes>
+    </Router>
   );
 }
 
