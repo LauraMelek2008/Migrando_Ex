@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ThemeProvider } from './ThemeContext'; // Certifique-se de que o caminho está correto
+import { ThemeContext } from './ThemeContext'; // Certifique-se de que o caminho está correto
 import App from './App';
 import { RouterProvider } from 'react-router-dom';  
 import router from './router/Router.jsx';
@@ -15,8 +15,8 @@ const root = createRoot(container);
 // Renderize o aplicativo
 root.render(
   <StrictMode>
-    <ThemeProvider>
+    <ThemeContext>
       <RouterProvider router={router}/>
-    </ThemeProvider>
+    </ThemeContext>
   </StrictMode>
 );

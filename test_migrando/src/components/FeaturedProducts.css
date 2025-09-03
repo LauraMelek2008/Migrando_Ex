@@ -69,3 +69,12 @@
   color: var(--text-primary);
   margin-bottom: 15px;
 }
+
+.product-card.small {
+  max-width: 200px;
+  margin: auto;
+}
+
+.product-card.small img {
+  height: 150px;
+}

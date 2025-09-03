@@ -7,7 +7,7 @@ import HelpSection from '../components/HelpSection';
 import ProductCategories from '../components/ProductCategories';
 import FeaturedProducts from '../components/FeaturedProducts';
 import Footer from '../components/Footer';
-import { ThemeProvider } from '../ThemeContext';
+import { ThemeContext} from '../ThemeContext';
 import { ThemeEffect } from '../ThemeEffect';
 
 
@@ -33,9 +33,9 @@ function BoasVindasContent() {
 
 function BoasVindas() {
   return (
-    <ThemeProvider>
+    <ThemeContext>
       <BoasVindasContent />
-    </ThemeProvider>
+    </ThemeContext>
   );
 }
 

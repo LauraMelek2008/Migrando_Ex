@@ -35,7 +35,7 @@ const Header = () => {
               <li><a href="#">Coleções</a></li>
               <li><a href="#">Ofertas</a></li>
               <li><a href="#">Contato</a></li>
-              <li><a href="/cadastro-produto">Minha Loja</a></li> {/* Novo item */}
+              <li><a href="/loja">Minha Loja</a></li> {/* Novo item */}
             </ul>
           </nav>
           <div className="header-actions">
